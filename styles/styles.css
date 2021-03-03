@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(143, 143, 143);
+    margin:0;
+    padding:0;
+}
+header{
+    border: solid 5px yellow;
+    height: 20%;
+}
+nav{
+    margin-left: 0%;
+    background-color: yellow;
+    height: auto;
+    position: relative;
+    width: 200px;
+}
