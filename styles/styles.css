@@ -1,16 +1,213 @@
-body{
-    background-color: rgb(143, 143, 143);
-    margin:0;
-    padding:0;
-}
-header{
-    border: solid 5px yellow;
-    height: 20%;
+body {
+    background-color: rgb(63, 63, 63);
+    margin: 0%;
+    padding: 0%;
+    position: relative;
+}/*Paginas que no tienen relacion con el login*/
+
+.pages main {
+    height: 1000px;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 0%;
+    border: solid black 1px;
+    /*Cosas de la cabecera y el pie*/
 }
 nav{
-    margin-left: 0%;
-    background-color: yellow;
-    height: auto;
-    position: relative;
-    width: 200px;
+    margin-left: 15%;
+    margin-right: 15%;
 }
+
+#cabecera, #pie {
+    background-color: #adff2f;
+    height: 50px;
+}
+
+#cabecera #titulo {
+    width: fit-content;
+    margin-left: 5px;
+    font-size: 30px;
+    color: #2b2b2b;
+    position: absolute;
+}
+
+#cabecera #titulo {
+    font-family: 'Oi', cursive;
+    top: 7px;
+}
+
+#cabecera #rs {
+    width: fit-content;
+    margin-right: 5px;
+    font-size: 30px;
+    color: #2b2b2b;
+    position: absolute;
+    right: 5px;
+    top: 10px;
+}
+
+#pie {
+    top: 900px;
+    padding-left: 42.5%;
+    padding-top: 20px;
+}
+
+#pie span {
+    border: #2b2b2b solid 2px;
+    width: 20%;
+}
+
+/*Fin de las cosas de la cabecera y el pie*/
+
+/* esto es pa modificar los links bro */
+a:link {
+    color: #2b2b2b;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #2b2b2b;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #dc143c;
+}
+
+a:active {
+    color: #b10e2f;
+}
+
+/* aqui acaba lo de los links mate */
+
+nav {
+    border: 1px solid;
+}
+
+#clear {
+    clear: both;
+}
+
+ul {
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+}
+
+ul a {
+    border: #000000 solid 2px;
+    background-color: #b10e2f;
+    height: 50px;
+    width: 230.54px;
+    float: left;
+}
+
+ul a {
+    display: block;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.articulillos {
+    height: 350px;
+    width: 350px;
+    margin: 0px;
+    float: left;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.articulillos header span{
+    font-size: 20px;
+    
+}
+
+.articulillos img {
+    height: 350px;
+    width: 350px;
+    border-radius: 150px;
+    border: none;
+}
+/*Fin de cosas que no tienen que ver con el login*/
+
+#login{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    border: #adff2f solid 3px;
+}
+#login h1{
+    display: block;
+    text-align: center;
+    border: #adff2f solid 3px;
+}
+#register{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    
+    border: #adff2f solid 3px;
+}
+#register h1{
+    display: block;
+    text-align: center;
+    border: #adff2f solid 3px;
+}
+ button{
+    position: absolute;
+   left: 40%;
+   right: 40%;
+   width: 120px;
+}
+.draw-border {
+    box-shadow: inset 0 0 0 4px #b10e2f;
+    color: #dc143c;
+    transition: color 0.25s 0.0833333333s;
+    position: relative;
+  }
+  .draw-border:before, .draw-border:after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+  }
+  .draw-border::before {
+    border-bottom-width: 4px;
+    border-left-width: 4px;
+  }
+  .draw-border::after {
+    border-top-width: 4px;
+    border-right-width: 4px;
+  }
+  .draw-border:hover {
+    color: #adff2f;
+  }
+  .draw-border:hover::before, .draw-border:hover::after {
+    border-color: #adff2f;
+    transition: border-color 0s, width 0.25s, height 0.25s;
+    width: 100%;
+    height: 100%;
+  }
+  .draw-border:hover::before {
+    transition-delay: 0s, 0s, 0.25s;
+  }
+  .draw-border:hover::after {
+    transition-delay: 0s, 0.25s, 0s;
+  }
+  
+  .btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1.5;
+    font: 20px "Roboto Slab", sans-serif;
+    padding: 8px;
+  }
+  .btn:focus {
+    outline: 2px dotted #adff2f;
+  }
