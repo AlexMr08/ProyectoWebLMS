@@ -7,17 +7,12 @@ body {
 
 .pages main {
     height: 1000px;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 150px;
+    margin-right: 150px;
     padding: 0%;
     border: solid black 1px;
     /*Cosas de la cabecera y el pie*/
 }
-nav{
-    margin-left: 15%;
-    margin-right: 15%;
-}
-
 #cabecera, #pie {
     background-color: #adff2f;
     height: 50px;
@@ -56,7 +51,6 @@ nav{
     border: #2b2b2b solid 2px;
     width: 20%;
 }
-
 /*Fin de las cosas de la cabecera y el pie*/
 
 /* esto es pa modificar los links bro */
@@ -81,7 +75,8 @@ a:active {
 /* aqui acaba lo de los links mate */
 
 nav {
-    border: 1px solid;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 #clear {
@@ -95,10 +90,10 @@ ul {
 }
 
 ul a {
-    border: #000000 solid 2px;
+    border-left: #2b2b2b solid 1px;
     background-color: #b10e2f;
     height: 50px;
-    width: 230.54px;
+    width: 399.75px;
     float: left;
 }
 
