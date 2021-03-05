@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(63, 63, 63);
+    background-color: #3f3f3f;
     margin: 0%;
     padding: 0%;
     position: relative;
@@ -69,14 +69,13 @@ a:hover {
 }
 
 a:active {
-    color: #b10e2f;
+    color: #035700;
 }
 
 /* aqui acaba lo de los links mate */
 
 nav {
-    margin-left: 150px;
-    margin-right: 150px;
+    background-color: #035700;
 }
 
 #clear {
@@ -87,13 +86,16 @@ ul {
     list-style: none;
     margin: 0%;
     padding: 0%;
+    display: block;
 }
 
 ul a {
-    border-left: #2b2b2b solid 1px;
+    border: #ff0000 solid 1px;
+    border-radius: 6px;
     background-color: #b10e2f;
-    height: 50px;
-    width: 399.75px;
+    height: 30px;
+    width: 150px;
+    margin: 5px 10px 5px 10px;
     float: left;
 }
 

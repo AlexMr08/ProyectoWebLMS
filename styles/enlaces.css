@@ -1,0 +1,20 @@
+/* esto es pa modificar los links bro */
+a:link {
+    color: #2b2b2b;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #2b2b2b;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #dc143c;
+}
+
+a:active {
+    color: #b10e2f;
+}
+
+/* aqui acaba lo de los links mate */
