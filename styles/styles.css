@@ -3,18 +3,19 @@ body {
     margin: 0%;
     padding: 0%;
     position: relative;
-}/*Paginas que no tienen relacion con el login*/
-
+}
+/*Paginas que no tienen relacion con el login*/
 .pages main {
     height: 1000px;
     margin-left: 150px;
     margin-right: 150px;
     padding: 0%;
     border: solid black 1px;
-    /*Cosas de la cabecera y el pie*/
 }
+/*Cosas de la cabecera y el pie*/
 #cabecera, #pie {
-    background-color: #adff2f;
+    background: rgb(171,217,4);
+background: linear-gradient(180deg, rgba(171,217,4,1) 75%, rgba(97,140,3,1) 100%);
     height: 50px;
 }
 
@@ -74,7 +75,7 @@ a:active {
 /* aqui acaba lo de los links mate */
 
 nav {
-    background-color: #035700;
+    background-color: #618c03;
 }
 
 #clear {
