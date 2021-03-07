@@ -6,14 +6,13 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>register</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../styles/login.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../styles/styles.css'>
 </head>
 
-<body id="login">
+<body class="login">
     <header>
-        <h1>
-            sign in
-        </h1>
+        <a href="../index.html"><img src="../images/icon_white.svg" alt="Volver a index" width="50px" height="50px"></a>
+        <h1>CREA TU CUENTA</h1>
     </header>
     <main>
 
@@ -22,18 +21,19 @@
 
                 <fieldset id="datos">
                     <legend>Datos personales</legend>
-                    <input id="name" name="name" type="text" placeholder="nombre">
-                    <input id="surname" name="surname" type="text" placeholder="apellidos">
+                    <input id="name" name="name" type="text" placeholder="Nombre">
+                    <input id="surname" name="surname" type="text" placeholder="Apellidos">
+                    <label for="fecha">Fecha de nacimiento</label>
                     <input type="date" name="fecha" id="fecha">
                 </fieldset>
                 <fieldset id="info">
-                    <input id="usuaio" name="usuario" type="text" placeholder="nombre de usuario" maxlength="16">
+                    <input id="user" name="usuario" type="text" placeholder="Nombre de usuario" maxlength="16">
                     <br/>
-                    <input id="e-mail" name="e-mail" type="text" placeholder="e-mail">
+                    <input id="e-mail" name="e-mail" type="text" placeholder="E-mail" maxlength="40">
                     <br/>
-                    <input id="pass" name="pass" type="password" placeholder="contraseña">
+                    <input id="pass" name="pass" type="password" placeholder="Introduce la contraseña" maxlength="18">
                     <br/>
-                    <input id="pass" name="pass2" type="password" placeholder="repite la contraseña">
+                    <input id="pass2" name="pass2" type="password" placeholder="Repite la contraseña">
                 </fieldset>
                 <button type="submit" class="btn draw-border">Registrarse</button>
             </form>
