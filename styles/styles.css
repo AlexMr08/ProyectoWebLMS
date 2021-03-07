@@ -1,6 +1,6 @@
+/*#486900 #bf6849 #abd904 #dbdbdb #2b2b2b #151515 #F2F2F2*/
 body {
-    background: rgb(106,58,41);
-    background: linear-gradient(90deg, rgba(106,58,41,1) 0%, rgba(191,104,73,1) 33%, rgba(191,104,73,1) 66%, rgba(102,56,40,1) 100%);
+    background: #151515 ;
     margin: 0%;
     padding: 0%;
     position: relative;
@@ -13,11 +13,10 @@ body {
     margin-top: 15px;
     margin-bottom: 15px;
     padding: 0%;
-    border: ridge #486900 10px;
+    border: ridge  10px;
     border-radius: 0px;
-    background: #f2f2f2;
+    background: #cfcfcf;
     padding: 20px 20px 20px 20px;
-    box-shadow: 0px 0px 20px 1px #00000066;
     
 }
 /*Cosas de la cabecera y el pie*/
@@ -27,7 +26,7 @@ body {
 }
 
 #cabecera{
-    background: #abd904;
+    background: #1d1d1d;
 }
 #pie{
 background: #abd904;
@@ -69,28 +68,11 @@ background: #abd904;
 /*Fin de las cosas de la cabecera y el pie*/
 
 /* esto es pa modificar los links bro */
-a:link {
-    color: #2b2b2b;
-    text-decoration: none;
-}
-
-a:visited {
-    color: #2b2b2b;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #242424;
-}
-
-a:active {
-    color: #1d1d1d;
-}
 
 /* aqui acaba lo de los links mate */
 
 nav {
-    background-color: #2c4001;
+    background-color: #2b2b2b;
 }
 
 #clear {
@@ -107,7 +89,7 @@ ul {
 ul a {
     border: #abd904 solid 1px;
     border-radius: 6px;
-    background-color: #bf6849;
+    background-color: #1d1d1d;
     height: 30px;
     width: 150px;
     margin: 5px 10px 5px 10px;
@@ -125,7 +107,7 @@ ul a {
     position: absolute;
     margin: 10px;
     padding: 10px;
-    border: #cfcfcf75 solid 3px;
+    border: #3b3b3b1c solid 3px;
     border-radius: 10px;
     position: relative;
 }
@@ -151,7 +133,6 @@ ul a {
 .articulillos img{
     height: 350px;
     width: 350px;
-    border-radius: 50px;
     top: 30px;
     border: none;
     display: block;

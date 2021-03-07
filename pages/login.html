@@ -6,25 +6,26 @@
     <title>login</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='../styles/login.css'>
+    <link rel="stylesheet" href="../styles/enlaces.css">
 </head>
 
 <body id="login">
     <header>
-        <h1>
-            sign in
-        </h1>
+        <h1>INICIAR SESION</h1>
     </header>
     <main>
         
-        <section id="sign-in">
+        <section>
             <form action="#">
-                <input id="e-mail" name="e-mail" type="text" placeholder="e-mail">
-                <input id="e-mail" name="e-mail" type="password" placeholder="contraseña">
+                <input id="e-mail" name="e-mail" type="text" placeholder="e-mail" maxlength="40">
+                <input id="password" name="password" type="password" placeholder="contraseña" maxlength="18">
                 <button type="submit" class="btn draw-border">Iniciar sesion</button>
             </form>
-            <span>¿No tienes cuenta? <a href="register.html">Registrate</a></span>
         </section>
+        
     </main>
-    <footer></footer>
+    <footer>
+            <span>¿No tienes cuenta? <a href="register.html">Registrate</a></span>
+        </footer>
 </body>
 </html>
