@@ -6,12 +6,12 @@
     margin: 0%;
     padding: 0%;
     position: relative;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 .pages p{
     text-align: justify;
 }
 .pages main {
-    font-family: 'Roboto Condensed', sans-serif;
     height: auto;
     margin-left: 15%;
     margin-right: 15%;
@@ -195,7 +195,7 @@ a:active {
     margin-top: 50px;
     padding-left: 10px;
     padding-right: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   }
   
   .login main {
