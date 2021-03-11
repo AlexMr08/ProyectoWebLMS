@@ -1,18 +1,25 @@
 /*#486900 #bf6849 #abd904 #f2f2f2 #dbdbdb #2b2b2b #151515  #cfcfcf75*/
 
 /*Paginas principales*/
+html{
+  min-height: 100%;
+  max-height: fit-content;
+}
+
 .pages {
     background: #151515 ;
     margin: 0%;
     padding: 0%;
-    position: relative;
+    height: 100%;
     font-family: 'Roboto Condensed', sans-serif;
 }
 .pages p{
     text-align: justify;
 }
 .pages main {
-    height: auto;
+  position: relative;
+    width: auto;
+    height: 100%;
     margin-left: 15%;
     margin-right: 15%;
     margin-top: 15px;
@@ -21,55 +28,49 @@
     border: ridge  10px;
     border-radius: 0px;
     background: #cfcfcf;
-    padding: 20px 20px 20px 20px;
+    padding: 20px;
     
 }
 /*Cosas de la cabecera y el pie*/
-#cabecera, #pie {
+.cabecera, .pie {
+  position: relative;
     color: #abd904;
     height: 50px;
-}
-
-#cabecera{
     background: #1d1d1d;
 }
-#pie{
-background: #1d1d1d;
 
-
-}
-
-#cabecera #titulo {
+.cabecera .titulo, .cabecera .rs {
     width: fit-content;
-    margin-left: 5px;
     font-size: 30px;
-    color: #2b2b2b;
     position: absolute;
-}
-
-#cabecera #titulo {
     font-family: 'Lalezar', cursive;
-    top: 7px;
+    top: 20%;
 }
 
-#cabecera #rs {
-    width: fit-content;
-    margin-right: 5px;
-    font-size: 30px;
-    color: #2b2b2b;
-    position: absolute;
-    right: 5px;
-    top: 10px;
+.cabecera .titulo{
+  left: 15px;
 }
 
-#pie {
-    top: 900px;
-    padding-left: 42.5%;
-    padding-top: 20px;
+.cabecera .rs {
+  right: 15px;
 }
 
-#pie span {
-    width: 20%;
+.pie {
+  bottom: 0%;
+  left: 0%;
+  padding-top: 20px;
+}
+
+.pie span , .pie .varios{
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pie .varios a{
+  margin-right: 8px;
+  float: left;
+  margin-top: 10px;
 }
 /*Fin de las cosas de la cabecera y el pie*/
 
@@ -78,7 +79,7 @@ nav {
     background-color: #2b2b2b;
 }
 
-#clear {
+.clear {
     clear: both;
 }
 
@@ -101,7 +102,6 @@ ul a {
 }
 
 ul a {
-    display: block;
     text-align: center;
     padding-top: 15px;
 }
@@ -109,7 +109,6 @@ ul a {
 
 .articulillos {
     height: 400px;
-    position: absolute;
     margin: 10px;
     padding: 10px;
     border: #3b3b3b1c solid 3px;
@@ -121,7 +120,8 @@ ul a {
     display: block;
     top: 100px;
     left: 375px;
-    width: 450px;
+    width: 50%;
+    min-width: 40%;
     height: 300px;
     position: absolute;
 }
@@ -143,175 +143,296 @@ ul a {
     display: block;
     position: absolute;
 }
+#principal header h2 {
+  text-align: center;
+  color: #486900;
+}
+
+#principal article p {
+  text-align: justify;
+}
+
+#principal img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  height: 25%;
+}
+
 /*Fin de las paginas principales*/
 
 /*Estilos de los links*/
 a:link {
-    color: #486900;
-    text-decoration: none;
+  color: #486900;
+  text-decoration: none;
 }
 
 a:visited {
-    color: #486900;
-    text-decoration: none;
+  color: #486900;
+  text-decoration: none;
 }
 
 a:hover {
-    color: #abd904;
+  color: #abd904;
 }
 
 a:active {
-    color: #486900;
+  color: #486900;
 }
+
 /*Fin estilos de los links*/
 
 /*Estilos del log-in/register*/
 .login {
-        font-family: 'Roboto Condensed', sans-serif;
-    background: #151515;
-    width: 100%;
-    margin: 0%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0%;
-  }
-  
-  .login header, .login main, .login footer {
-    display: block;
-    background: #2b2b2b;
-    border: #abd90475 2px solid;
-    border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .login header {
-    text-align: center;
-    color: #f2f2f2;
-    width: 300px;
-    height: 120px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-  }
-  
-  .login main {
-    width: 300px;
-    margin-top: 25px;
-    padding: 10px;
-  }
-  
-  .login footer {
-    text-align: center;
-    width: 300px;
-    height: 60px;
-    margin-top: 25px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  
-  .login footer span {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  
-  .login form input {
-    width: 275px;
-  }
-  
-  .login form label {
-    display: block;
-    margin-top: 20px;
-    margin-left: 5px;
-  }
-  
-  .login form input, .login form button {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-  
-  .login fieldset {
-    color: #f2f2f2;
-    margin-top: 5px;
-    padding: 0%;
-  }
-  /*Fin estilos del log-in*/
-  
-  /*Animacion boton */
-  
-  button {
-    width: 150px;
-  }
+  font-family: 'Roboto Condensed', sans-serif;
+  background: #151515;
+  color: #f2f2f2;
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+}
 
-  .draw-border {
-    box-shadow: inset 0 0 0 4px #f2f2f2;
-    color: #f2f2f2;
-    transition: color 0.25s 0.0833333333s;
-    position: relative;
-  }
-  
-  .draw-border:before,
-  .draw-border:after {
-    border: 0 solid transparent;
-    box-sizing: border-box;
-    content: "";
-    pointer-events: none;
-    position: absolute;
-    width: 0;
-    height: 0;
-    bottom: 0;
-    right: 0;
-  }
-  
-  .draw-border::before {
-    border-bottom-width: 4px;
-    border-left-width: 4px;
-  }
-  
-  .draw-border::after {
-    border-top-width: 4px;
-    border-right-width: 4px;
-  }
-  
-  .draw-border:hover {
-    color: #abd904;
-  }
-  
-  .draw-border:hover::before,
-  .draw-border:hover::after {
-    border-color: #abd904;
-    transition: border-color 0s, width 0.25s, height 0.25s;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .draw-border:hover::before {
-    transition-delay: 0s, 0s, 0.25s;
-  }
-  
-  .draw-border:hover::after {
-    transition-delay: 0s, 0.25s, 0s;
-  }
-  
-  .btn {
-    background: none;
-    border: none;
-    cursor: pointer;
-    line-height: 1.5;
-    font: 20px "Roboto Slab", sans-serif;
-    padding: 8px;
-  }
-  
-  .btn:focus {
-    outline: 2px dotted #abd904;
-  }
-  /*Fin animacion del boton*/
+.login header,
+.login main,
+.login footer {
+  display: block;
+  background: #2b2b2b;
+  border: #abd90475 2px solid;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.login header {
+  text-align: center;
+  width: 300px;
+  height: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  cursor: default;
+
+}
+
+.login main {
+  width: 300px;
+  margin-top: 25px;
+  padding: 10px;
+}
+
+.login footer {
+  text-align: center;
+  width: 300px;
+  height: 60px;
+  margin-top: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.login footer span {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.login form input {
+  width: 275px;
+}
+
+.login form label {
+  display: inline;
+  margin-left: 10px;
+}
+
+.login form h4 {
+  display: inline;
+  color: #abd904;
+}
+
+.login form input,
+.login form button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+input:focus {
+  outline: solid 1px #abd904;
+}
+
+/*Fin estilos del log-in*/
+
+/*Animacion boton */
+
+button {
+  width: 150px;
+}
+
+.draw-border {
+  box-shadow: inset 0 0 0 4px #f2f2f2;
+  color: #f2f2f2;
+  transition: color 0.25s 0.0833333333s;
+  position: relative;
+}
+
+.draw-border:before,
+.draw-border:after {
+  border: 0 solid transparent;
+  box-sizing: border-box;
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.draw-border::before {
+  border-bottom-width: 4px;
+  border-left-width: 4px;
+}
+
+.draw-border::after {
+  border-top-width: 4px;
+  border-right-width: 4px;
+}
+
+.draw-border:hover {
+  color: #abd904;
+}
+
+.draw-border:hover::before,
+.draw-border:hover::after {
+  border-color: #abd904;
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+}
+
+.draw-border:hover::before {
+  transition-delay: 0s, 0s, 0.25s;
+}
+
+.draw-border:hover::after {
+  transition-delay: 0s, 0.25s, 0s;
+}
+
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  font: 20px "Roboto Slab", sans-serif;
+  padding: 8px;
+}
+
+.btn:focus {
+  outline: 2px dotted #abd904;
+}
+
+/*Fin animacion del boton*/
+
+/*Estilos de contacto.html*/
+#solicitud{
+  width: 100%;
+  height: 100%;
+}
+#solicitud div{
+  margin-bottom: 10px;
+
+}
+div label{
+  width: 10%;
+  float: left;
+}
+ #solicitud #asunto, #solicitud #email{
+  width: 40%;
+}
+textarea:focus{
+  outline: none;
+}
+#solicitud textarea{
+  border-radius: 5px;
+  resize: none;
+  width: 85%;
+  padding: 5px;
+}
+#solicitud button{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+#solicitud label{
+  cursor: pointer;
+}
+/*Boton Solicitud*/
+button {
+  width: 150px;
+}
+
+#solicitud .draw-border {
+  box-shadow: inset 0 0 0 4px #486900;
+  color: #486900;
+  transition: color 0.25s 0.0833333333s;
+  position: relative;
+}
+
+#solicitud .draw-border:before,
+#solicitud .draw-border:after {
+  border: 0 solid transparent;
+  box-sizing: border-box;
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+}
+
+#solicitud .draw-border::before {
+  border-bottom-width: 4px;
+  border-left-width: 4px;
+}
+
+#solicitud .draw-border::after {
+  border-top-width: 4px;
+  border-right-width: 4px;
+}
+
+#solicitud .draw-border:hover {
+  color: #2b2b2b;
+}
+
+#solicitud .draw-border:hover::before,
+#solicitud .draw-border:hover::after {
+  border-color: #2b2b2b;
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+}
+
+#solicitud .draw-border:hover::before {
+  transition-delay: 0s, 0s, 0.25s;
+}
+
+#solicitud .draw-border:hover::after {
+  transition-delay: 0s, 0.25s, 0s;
+}
+
+
+#solicitud .btn:focus {
+  outline: 2px dotted #2b2b2b;
+}
+/*Fin boton solicitud*/
+/*Fin estilos contacto.html*/

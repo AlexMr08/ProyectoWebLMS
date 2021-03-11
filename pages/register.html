@@ -18,30 +18,26 @@
 
 <body class="login">
     <header>
-        <a href="../index.html"><img src="../images/icon_white.svg" alt="Volver a index" width="60px" height="60px"></a>
+        <a href="../index.html" class="logo"><img src="../images/icon_white.svg" alt="Volver a index" width="60px" height="60px"></a>
         <h1>CREA TU CUENTA</h1>
     </header>
     <main>
 
         <section id="sign-up">
             <form action="#">
-
-                <fieldset id="datos">
-                    <legend>Datos personales</legend>
+                    <label for="name">Nombre</label>
                     <input id="name" name="name" type="text" placeholder="Nombre">
+                    <label for="surname">Apellidos</label>
                     <input id="surname" name="surname" type="text" placeholder="Apellidos">
                     <label for="fecha">Fecha de nacimiento</label>
                     <input type="date" name="fecha" id="fecha">
-                </fieldset>
-                <fieldset id="info">
+                    <label for="user">Nombre de usuario<h4>*</h4></label>
                     <input id="user" name="usuario" type="text" placeholder="Nombre de usuario" maxlength="16">
-                    <br />
+                    <label for="e-mail">Correo electronico<h4>*</h4></label>
                     <input id="e-mail" name="e-mail" type="text" placeholder="E-mail" maxlength="40">
-                    <br />
+                    <label for="pass">contraseña<h4>*</h4></label>
                     <input id="pass" name="pass" type="password" placeholder="Introduce la contraseña" maxlength="18">
-                    <br />
                     <input id="pass2" name="pass2" type="password" placeholder="Repite la contraseña">
-                </fieldset>
                 <button type="submit" class="btn draw-border">Registrarse</button>
             </form>
         </section>

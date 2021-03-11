@@ -13,14 +13,14 @@
         crossorigin="anonymous" />
     <!--Fin fuentes e iconos-->
     <link rel="shortcut icon" href="images/icon.svg" type="image/svg" />
-    <link rel='stylesheet' type='text/css' media='screen' href='styles/styles.css' />
+    <link rel='stylesheet' type='text/css' media='screen' href='../styles/styles.css' />
 </head>
 
 <body class="pages">
 
     <header class="cabecera">
         <div class="titulo">
-            <a href="index.html">
+            <a href="../index.html">
                 <span>LA VIDA ES DURA</span>
                 <i class="fab fa-earlybirds"></i>
             </a>
@@ -29,53 +29,76 @@
         <div class="rs">
             <a href="https://twitter.com/?lang=es"><i class="fab fa-twitter"></i></a>
             <a href="https://www.instagram.com/?hl=es"><i class="fab fa-instagram"></i></a>
-            <a href="pages/login.html"><i class="far fa-user-circle"></i></a>
+            <a href="login.html"><i class="far fa-user-circle"></i></a>
+
         </div>
+
     </header>
     <nav>
         <ul>
-            <a href="pages/pajaros.html" class="menu">
+            <a href="pajaros.html" class="menu">
                 <li>Aves</li>
             </a>
-            <a href="pages/mamiferos.html" class="menu">
+            <a href="mamiferos.html" class="menu">
                 <li>Mamiferos</li>
             </a>
-            <a href="pages/reptiles.html" class="menu">
+            <a href="reptiles.html" class="menu">
                 <li>Reptiles</li>
             </a>
-            <a href="pages/anfibios.html" class="menu">
+            <a href="anfibios.html" class="menu">
                 <li>Anfibios</li>
             </a>
-            <a href="pages/peces.html" class="menu">
+            <a href="peces.html" class="menu">
                 <li>Peces</li>
             </a>
             <div class="clear"></div>
         </ul>
     </nav>
     <main>
-        <section id="principal">
-            <header>
-                <h2>Bienvenido a LA VIDA ES DURA</h2>
-            </header>
-            <img src="images/imagen_index.jpg" alt="Tigre en la selva" id="imagenindex">
-            <article>
-                <p>
-                    En esta pagina podras encontrar informacion sobre el animal favorito de tu animal favorito.
-                </p>
-                <p>
-                    De momento solo tenemos informacion sobre unos 10 animales de distintas especies, de momento es un
-                    numero muy pequeño pero solo danos un poco de tiempo y te sorprenderemos. ;)
-                </p>
-            </article>
-
+        <section id="solicitud">
+            <form action="#">
+                <div>
+                    <label for="nombre">
+                        Nombre
+                    </label>
+                    <input type="text" name="name" id="nombre">
+                </div>
+                <div>
+                    <label for="apellidos">
+                        Apellidos
+                    </label>
+                    <input type="text" name="apellidos" id="apellidos">
+                </div>
+                <div>
+                    <label for="email">
+                        E-mail
+                    </label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div>
+                    <label for="asunto">
+                        Asunto
+                    </label>
+                    <input type="text" name="asunto" id="asunto">
+                </div>
+                <div>
+                    <label for="contenido">
+                        Mensaje
+                    </label>
+                    <br/>
+                    <textarea id="contenido" name="contenido" cols="50" rows="10" maxlength="499"></textarea>
+                </div>
+                <button type="submit" class="btn draw-border">Enviar</button>
+                
+            </form>
         </section>
     </main>
     <footer class="pie">
         <span>Made with <i class="fas fa-heart"></i> & <i class="far fa-clock"></i> in <a
                 href="https://www.google.com/maps/place/Granada/@37.1532405,-3.6369342,11z/data=!4m5!3m4!1s0xd71fce62d32c27d:0x9258f79dd3600d72!8m2!3d37.1773363!4d-3.5985571">Granada</a></span>
         <div class="varios">
-            <a href="pages/Q&A.html">Soporte</a>
-            <a href="#">Contacto</a>
+            <a href="Q&A.html">Soporte</a>
+            <a href="contacto.html">Contacto</a>
             <div class="clear"></div>
         </div>
     </footer>
