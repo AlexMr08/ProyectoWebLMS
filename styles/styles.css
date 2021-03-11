@@ -6,11 +6,12 @@ html{
   max-height: fit-content;
 }
 
-.pages {
+body {
+
     background: #151515 ;
     margin: 0%;
     padding: 0%;
-    height: 100%;
+    min-height: 100%;
     font-family: 'Roboto Condensed', sans-serif;
 }
 .pages p{
@@ -19,17 +20,14 @@ html{
 .pages main {
   position: relative;
     width: auto;
-    height: 100%;
     margin-left: 15%;
     margin-right: 15%;
     margin-top: 15px;
     margin-bottom: 15px;
-    padding: 0%;
     border: ridge  10px;
     border-radius: 0px;
     background: #cfcfcf;
     padding: 20px;
-    
 }
 /*Cosas de la cabecera y el pie*/
 .cabecera, .pie {
