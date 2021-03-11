@@ -1,51 +1,59 @@
 /*#486900 #bf6849 #abd904 #f2f2f2 #dbdbdb #2b2b2b #151515  #cfcfcf75*/
 
 /*Paginas principales*/
-html{
-  min-height: 100%;
-  max-height: fit-content;
+html {
+  height: 100%;
 }
 
 body {
 
-    background: #151515 ;
-    margin: 0%;
-    padding: 0%;
-    min-height: 100%;
-    font-family: 'Roboto Condensed', sans-serif;
+  background: #151515;
+  margin: 0%;
+  padding: 0%;
+  min-height: 100%;
+  font-family: 'Roboto Condensed', sans-serif;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
-.pages p{
-    text-align: justify;
+
+.pages p {
+  text-align: justify;
 }
+
 .pages main {
+  flex: 1;
   position: relative;
-    width: auto;
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    border: ridge  10px;
-    border-radius: 0px;
-    background: #cfcfcf;
-    padding: 20px;
+  width: auto;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: ridge 10px;
+  border-radius: 0px;
+  background: #cfcfcf;
+  padding: 20px;
 }
+
 /*Cosas de la cabecera y el pie*/
-.cabecera, .pie {
+.cabecera,
+.pie {
   position: relative;
-    color: #abd904;
-    height: 50px;
-    background: #1d1d1d;
+  color: #abd904;
+  height: 50px;
+  background: #1d1d1d;
 }
 
-.cabecera .titulo, .cabecera .rs {
-    width: fit-content;
-    font-size: 30px;
-    position: absolute;
-    font-family: 'Lalezar', cursive;
-    top: 20%;
+.cabecera .titulo,
+.cabecera .rs {
+  width: fit-content;
+  font-size: 30px;
+  position: absolute;
+  font-family: 'Lalezar', cursive;
+  top: 20%;
 }
 
-.cabecera .titulo{
+.cabecera .titulo {
   left: 15px;
 }
 
@@ -54,93 +62,99 @@ body {
 }
 
 .pie {
-  bottom: 0%;
+  align-items: flex-end;
   left: 0%;
   padding-top: 20px;
 }
 
-.pie span , .pie .varios{
+.pie span,
+.pie .varios {
   display: block;
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
 }
-.pie .varios a{
+
+.pie .varios a {
   margin-right: 8px;
   float: left;
   margin-top: 10px;
 }
+
 /*Fin de las cosas de la cabecera y el pie*/
 
 /*Estilo Nav*/
 nav {
-    background-color: #2b2b2b;
+  background-color: #2b2b2b;
 }
 
 .clear {
-    clear: both;
+  clear: both;
 }
 
 ul {
-    list-style: none;
-    margin: 0%;
-    padding: 0%;
-    display: block;
-    font: 15px "Roboto Slab", sans-serif;
+  list-style: none;
+  margin: 0%;
+  padding: 0%;
+  display: block;
+  font: 15px "Roboto Slab", sans-serif;
 }
 
 ul a {
-    border: #abd904 solid 1px;
-    border-radius: 6px;
-    background-color: #1d1d1d;
-    height: 30px;
-    width: 150px;
-    margin: 5px 10px 5px 10px;
-    float: left;
+  border: #abd904 solid 1px;
+  border-radius: 6px;
+  background-color: #1d1d1d;
+  height: 30px;
+  width: 150px;
+  margin: 5px 10px 5px 10px;
+  float: left;
 }
 
 ul a {
-    text-align: center;
-    padding-top: 15px;
+  text-align: center;
+  padding-top: 15px;
 }
+
 /*Fin estilos nav*/
 
 .articulillos {
-    height: 400px;
-    margin: 10px;
-    padding: 10px;
-    border: #3b3b3b1c solid 3px;
-    border-radius: 10px;
-    position: relative;
+  height: 400px;
+  margin: 10px;
+  padding: 10px;
+  border: #3b3b3b1c solid 3px;
+  border-radius: 10px;
+  position: relative;
 }
 
-.articulillos article{
-    display: block;
-    top: 100px;
-    left: 375px;
-    width: 50%;
-    min-width: 40%;
-    height: 300px;
-    position: absolute;
-}
-.articulillos header h2{
-    font-family: 'Anton', sans-serif;
-    color: #486900;
-    font-size: 30px;
-    display: block;
-    top: 40px;
-    left: 375px;
-    position: absolute;
+.articulillos article {
+  display: block;
+  top: 100px;
+  left: 375px;
+  width: 50%;
+  min-width: 40%;
+  height: 300px;
+  position: absolute;
 }
 
-.articulillos img{
-    height: 350px;
-    width: 350px;
-    top: 30px;
-    border: none;
-    display: block;
-    position: absolute;
+.articulillos header h2 {
+  font-family: 'Anton', sans-serif;
+  color: #486900;
+  font-size: 30px;
+  display: block;
+  top: 40px;
+  left: 375px;
+  position: absolute;
 }
+
+.articulillos img {
+  height: 350px;
+  width: 350px;
+  top: 30px;
+  border: none;
+  display: block;
+  position: absolute;
+}
+
 #principal header h2 {
   text-align: center;
   color: #486900;
@@ -339,45 +353,56 @@ button {
 /*Fin animacion del boton*/
 
 /*Estilos de contacto.html*/
-#solicitud{
+#solicitud {
   width: 100%;
   height: 100%;
+  display: block;
+  padding: 20px;
 }
-#solicitud div{
-  margin-bottom: 10px;
+
+#solicitud div {
+  margin-bottom: 20px;
 
 }
-div label{
+
+div label {
   width: 10%;
   float: left;
 }
- #solicitud #asunto, #solicitud #email{
+
+#solicitud #asunto,
+#solicitud #email {
   width: 40%;
 }
-textarea:focus{
+
+textarea:focus {
   outline: none;
 }
-#solicitud textarea{
+
+#solicitud textarea {
+  display: block;
+  margin-top: 10px;
   border-radius: 5px;
   resize: none;
-  width: 85%;
+  width: 75%;
+  height: 80px;
   padding: 5px;
 }
-#solicitud button{
+
+#solicitud button {
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
 }
 
-#solicitud label{
+#solicitud label {
   cursor: pointer;
 }
-/*Boton Solicitud*/
-button {
-  width: 150px;
+#solicitud button{
+  margin-top: 50px;
 }
-
+/*Boton Solicitud*/
 #solicitud .draw-border {
   box-shadow: inset 0 0 0 4px #486900;
   color: #486900;
@@ -432,5 +457,6 @@ button {
 #solicitud .btn:focus {
   outline: 2px dotted #2b2b2b;
 }
+
 /*Fin boton solicitud*/
 /*Fin estilos contacto.html*/
