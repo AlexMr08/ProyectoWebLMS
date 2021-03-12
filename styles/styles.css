@@ -25,6 +25,7 @@ body {
   flex: 1;
   position: relative;
   width: auto;
+  height: fit-content;
   margin-left: 15%;
   margin-right: 15%;
   margin-top: 15px;
@@ -131,7 +132,6 @@ ul a {
   top: 100px;
   left: 375px;
   width: 50%;
-  min-width: 40%;
   height: 300px;
   position: absolute;
 }
@@ -153,6 +153,7 @@ ul a {
   border: none;
   display: block;
   position: absolute;
+  border-radius: 10px;
 }
 
 #principal header h2 {
