@@ -36,6 +36,22 @@ body {
   padding: 20px;
 }
 
+ h2 {
+  text-align: center;
+  color: #486900;
+}
+
+#principal article p {
+  text-align: justify;
+}
+
+#principal img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  height: 25%;
+}
+
 /*Cosas de la cabecera y el pie*/
 .cabecera,
 .pie {
@@ -88,7 +104,6 @@ body {
 nav {
   background-color: #2b2b2b;
 }
-
 .clear {
   clear: both;
 }
@@ -119,7 +134,8 @@ ul a {
 /*Fin estilos nav*/
 
 .articulillos {
-  height: 400px;
+  min-height: 440px;
+  max-height: max-content;
   margin: 10px;
   padding: 10px;
   border: #3b3b3b1c solid 3px;
@@ -129,10 +145,10 @@ ul a {
 
 .articulillos article {
   display: block;
-  top: 100px;
+  top: 70px;
   left: 375px;
   width: 50%;
-  height: 300px;
+  height: fit-content;
   position: absolute;
 }
 
@@ -141,13 +157,13 @@ ul a {
   color: #486900;
   font-size: 30px;
   display: block;
-  top: 40px;
+  top: 10px;
   left: 375px;
   position: absolute;
 }
 
 .articulillos img {
-  height: 350px;
+  height: 400px;
   width: 350px;
   top: 30px;
   border: none;
@@ -156,25 +172,10 @@ ul a {
   border-radius: 10px;
 }
 
-#principal header h2 {
-  text-align: center;
-  color: #486900;
-}
-
-#principal article p {
-  text-align: justify;
-}
-
-#principal img {
-  display: block;
-  margin: auto;
-  width: 80%;
-  height: 25%;
-}
-
 /*Fin de las paginas principales*/
 
-/*Estilos de los links*/
+/*Estilos de los links basicos*/
+
 a:link {
   color: #486900;
   text-decoration: none;
@@ -191,6 +192,12 @@ a:hover {
 
 a:active {
   color: #486900;
+}
+
+/*Estilo hover de link dentro de main (Se ve horrendo cuando se aclaran)*/
+
+main a:hover {
+  color: #2f4400;
 }
 
 /*Fin estilos de los links*/
