@@ -100,15 +100,11 @@ body {
 /*Fin de las cosas de la cabecera y el pie*/
 
 /*Estilo Nav*/
-nav {
+nav, nav a:hover {
   background-color: #2b2b2b;
 }
 ul li ul{
   display: none;
-}
-
-nav a:hover{
-  background: #2b2b2b;
 }
 
 .clear {
@@ -120,10 +116,9 @@ ul {
   margin: 0%;
   padding: 0%;
   display: flex;
-  font: 15px "Roboto Slab", sans-serif;
 }
 
-ul a {
+nav a , nav a:focus{
   border: #abd904 solid 1px;
   border-radius: 6px;
   background-color: #1d1d1d;
@@ -131,9 +126,6 @@ ul a {
   width: 150px;
   margin: 5px 10px 5px 10px;
   float: left;
-}
-
-ul a {
   text-align: center;
   padding-top: 15px;
 }
@@ -142,7 +134,7 @@ ul a {
 
 .articulillos {
   min-height: 440px;
-  max-height: max-content;
+  height: fit-content;
   margin: 10px;
   padding: 10px;
   border: #3b3b3b1c solid 3px;
