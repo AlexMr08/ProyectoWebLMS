@@ -41,7 +41,10 @@ body {
 }
 
 #principal article p {
+  width: 90%;
   text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #principal img {
@@ -49,6 +52,7 @@ body {
   margin: auto;
   width: 80%;
   height: 25%;
+  border-radius: 10px;
 }
 
 /*Cosas de la cabecera y el pie*/
@@ -56,7 +60,7 @@ body {
 .pie {
   position: relative;
   color: #abd904;
-  height: 50px;
+  height: 60px;
   background: #1d1d1d;
 }
 
@@ -102,9 +106,22 @@ body {
 /*Estilo Nav*/
 nav, nav a:hover {
   background-color: #2b2b2b;
+  z-index: 100;
+  position: relative;
 }
+
 ul li ul{
   display: none;
+}
+
+ul li:hover ul{
+  display: block;
+  z-index: 100;
+  position: absolute;
+  background: #2b2b2b;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  top: 100%;
 }
 
 .clear {
@@ -237,6 +254,7 @@ main a:hover {
 .login main {
   margin-top: 25px;
   padding: 10px;
+  text-align: left;
 }
 
 .login footer {
@@ -389,8 +407,8 @@ textarea:focus {
   padding: 5px;
 }
 
-#solicitud button {
-  display: block;
+#solicitud button 
+#solicitud .reset{
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
