@@ -407,8 +407,8 @@ textarea:focus {
   padding: 5px;
 }
 
-#solicitud button 
-#solicitud .reset{
+#solicitud button {
+  display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
@@ -417,9 +417,7 @@ textarea:focus {
 #solicitud label {
   cursor: pointer;
 }
-#solicitud button{
-  margin-top: 50px;
-}
+
 /*Boton Solicitud*/
 #solicitud .draw-border {
   box-shadow: inset 0 0 0 4px #486900;
