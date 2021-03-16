@@ -20,6 +20,7 @@
     <header>
         <a href="../index.html" class="logo"><img src="../images/icon_white.svg" alt="Volver a index"></a>
         <h1>CREA TU CUENTA</h1>
+        <audio src="../audio/musica_ascensor.mp3" autoplay loop></audio>
     </header>
     <main>
 
@@ -31,11 +32,12 @@
                 <input id="surname" name="surname" type="text" placeholder="Apellidos">
                 <label for="fecha">Fecha de nacimiento</label>
                 <input type="date" name="fecha" id="fecha">
-                <label for="user">Nombre de usuario<h4>*</h4></label>
+                <hr />
+                <label for="user">Nombre de usuario<span class="asterisco">*</span></label>
                 <input id="user" name="usuario" type="text" placeholder="Nombre de usuario" maxlength="16">
-                <label for="e-mail">Correo electronico<h4>*</h4></label>
+                <label for="e-mail">Correo electronico<span class="asterisco">*</span></label>
                 <input id="e-mail" name="e-mail" type="text" placeholder="E-mail" maxlength="40">
-                <label for="pass">contraseña<h4>*</h4></label>
+                <label for="pass">contraseña<span class="asterisco">*</span></label>
                 <input id="pass" name="pass" type="password" placeholder="Introduce la contraseña" maxlength="18">
                 <input id="pass2" name="pass2" type="password" placeholder="Repite la contraseña">
                 <button type="reset" class="btn draw-border">Reiniciar</button>

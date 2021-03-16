@@ -46,7 +46,6 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-
 #principal img {
   display: block;
   margin: auto;
@@ -165,9 +164,8 @@ nav a , nav a:focus{
   left: 375px;
   width: 50%;
   height: fit-content;
-  position: absolute;
+  position: relative;
 }
-
 .articulillos header h2 {
   font-family: 'Anton', sans-serif;
   color: #486900;
@@ -281,7 +279,7 @@ main a:hover {
   margin-left: 10px;
 }
 
-.login form h4 {
+.login form span {
   display: inline;
   color: #abd904;
 }
@@ -299,6 +297,9 @@ input:focus {
   outline: solid 1px #abd904;
 }
 
+.login hr{
+ border: #abd90475 solid 1px;
+}
 /*Fin estilos del log-in*/
 
 /*Animacion boton */
